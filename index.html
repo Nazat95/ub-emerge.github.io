@@ -171,8 +171,8 @@
 	  
       <div id="slide2" style = "" class="carousel-caption justify-content-center">
 	  
-        <p id="s2h1" style="text-align: left;">When the Yelp Reviews are Less than Accurate</p>
-        <p id="s2h2" style="text-align: left;">Our second issue: A jab at our use-it and lose-it society</p>
+        <p id="s2h1" style="text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: 80px;">When the Yelp Reviews are Less than Accurate</p>
+        <p id="s2h2" style="text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: 80px;">Our second issue: A jab at our use-it and lose-it society</p>
 		<h1 style="text-align: left;"> </h1>
 	  
 		<a href="https://www.dropbox.com/s/an63feai4io8ld5/IssueTwo_Environment.pdf?dl=0" target="_blank"><button id="s2b" type="button" class="btn btn-primary-outline btn-lg" style="border-radius: 25px; position: relative; left: 78px;">Read More</button></a>
@@ -233,13 +233,7 @@
 		
 		two_realign();
 		
-		function master_realign()
-		{
-			zero_realign();
-			one_realign();
-			two_realign();
-		}
-		window.onresize = master_realign;
+		window.onresize = two_realign;
 		
 	  </script>
     </div>
@@ -247,14 +241,88 @@
 
     <div class="item" style="background: black;">
       <img style="opacity: 0.25;" class="img-responsive" src="./JonWide.jpg" alt="Jon">
-      <div style = "left: 10%; transform: translateY(-60%);" class="carousel-caption ">
 	  
-        <h1 style="text-align: left;">Student Diaries: Jon</h1>
-        <h3 style="text-align: left;">A weekly online publication of student voices and achievements</h3>
+      <div id="slide3" style = "" class="carousel-caption justify-content-center">
+	  
+        <p id="s3h1" style="text-align: left;">Student Diaries: Jon</p>
+        <p id="s3h2" style="text-align: left;">A weekly online publication of student voices and achievements</p>
 		<h1 style="text-align: left;"> </h1>
 	  
-		<a href="/Jon.html"><button type="button" class="btn btn-primary-outline btn-lg" style="border-radius: 25px; position: relative; left: 78px;">Read More</button></a>
+		<a href="/Jon.html"><button id="s3b" type="button" class="btn btn-primary-outline btn-lg" style="border-radius: 25px; position: relative; left: 78px;">Read More</button></a>
 	  </div>
+	  
+	  <script> 
+		console.log("ayy");
+		
+		function three_alignmentString()
+		{
+			var y = screen.width / 30;
+			var str = "left: 10%; transform: translateY(-"
+			if(y > 45){y = 45;}
+			str = str + y;
+			str = str + "%);";
+			console.log("ayy1");
+			return str;
+		}
+		
+		function three_sizeStringh1()
+		{
+			var y = screen.width / 20;
+			var str = "text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: "
+			if(y > 95){y = 95;}
+			str = str + y;
+			str = str + "px;";
+			console.log("ayy2");
+			return str;
+		}
+		
+		
+		function three_sizeStringh2()
+		{
+			var y = screen.width / 40;
+			var str = "text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: "
+			if(y > 50){y = 50;}
+			str = str + y;
+			str = str + "px;";
+			console.log("ayy3");
+			return str;
+		}
+		
+		function three_alignmentButton()
+		{
+			var y = screen.width / 20;
+			var str = "border-radius: 25px; position: relative; left: "
+			//if(y > 50){y = 50;}
+			str = str + y;
+			str = str + "px;";
+			console.log("ayy4");
+			return str;
+		}
+		
+		
+		function three_realign()
+		{
+			document.getElementById("slide3").style = three_alignmentString();
+			document.getElementById("s3h1").style = three_sizeStringh1();
+			document.getElementById("s3h2").style = three_sizeStringh2();
+			document.getElementById("s3b").style = three_alignmentButton();
+			console.log("final");
+		}
+		console.log("finalfinal");
+		
+		function master_realign_again()
+		{
+			zero_realign();
+			one_realign();
+			two_realign();
+			three_realign();
+		}
+		
+		three_realign();
+		
+		window.onresize = master_realign_again;
+		
+	  </script>
     </div>
   </div>
 
