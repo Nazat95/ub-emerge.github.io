@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="cssfour.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #262626;">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle btn" data-toggle="collapse" data-target=".navbar-collapse" style="color: #00abbf;">
+	  <span class="glyphicon glyphicon-menu-hamburger" style="margin-top: -6px; color: #00abbf; font-size: 20px;"></span>
+    </button>    
+    
+	
+	<ul id="home">
+		<li><a href="#"><img class="img-responsive"style="max-width:175px; max-height: 150px; margin-top: 3px; padding-top: 0px; padding-bottom: 0px;" src="EmergeLogoTransparentNav.png"></a></li>
+	</ul>
+	
+	<button id= "statichome" type="button" class="btn" style="background-color: #262626; border-color: #262626;">
+		<span class="glyphicon glyphicon-home" style="margin-top: 7px; color: #00abbf; font-size: 20px;"></span>
+	</button>   
+	
+
+
+	
+  </div>
+  <div class="navbar-collapse collapse">
+  
+    <ul class="nav navbar-nav navbar-right" style="padding-right: 30px;">
+      <li><a href="#about">Latest Issue</a></li>
+	  <li><a href="#about">Student Diaries</a></li>
+	  <li><a href="#about">Meet the Team</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+  
+  
+  
+  
+  
+  
+  
+  
+    <div style="background: black;"class="item active">
+	  	
+      <img id="SplashFourk" style="" class="img-responsive" src="EmergeLogoWide.png" alt="Emerge Splash Logo">
+	  <script> 
+		
+		function zero_alignmentString()
+		{
+			var y = screen.width / 93;
+			var str = "transform: translateY(-"
+			str = str + y;
+			str = str + "%);";
+			return str;
+		}
+		
+		function zero_realign()
+		{
+			document.getElementById("SplashFourk").style = zero_alignmentString();
+			console.log("zero");
+		}
+		
+		zero_realign();
+		window.onresize = zero_realign;
+		
+	  </script>
+	  
+    </div>
+	
+	
+	<div class="item" style="background: black;">
+      <img style="opacity: 0.25;" class="img-responsive" src="Issue1ThumbCropWide.png" alt="Issue One">
+      
+	  <div id="slide1" style = "" class="carousel-caption justify-content-center">
+	  
+        <p id="s1h1" style="text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: 80px;">Women in STEM</p>
+        <p id="s1h2"style="text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: 30px;">Our pilot magazine issue on a powerful and emerging group in STEM</p>
+		<h1 style="text-align: left; "> </h1>
+	  
+		<button id="s1b" type="button" class="btn btn-primary-outline btn-lg" style="border-radius: 25px; position: relative; left: 78px;">Read More</button>
+	  </div>
+	  
+	  <script> 
+		
+		function one_alignmentString()
+		{
+			var y = screen.width / 30;
+			var str = "left: 10%; transform: translateY(-"
+			if(y > 45){y = 45;}
+			str = str + y;
+			str = str + "%);";
+			return str;
+		}
+		
+		function one_sizeStringh1()
+		{
+			var y = screen.width / 20;
+			var str = "text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: "
+			if(y > 95){y = 95;}
+			str = str + y;
+			str = str + "px;";
+			return str;
+		}
+		
+		
+		function one_sizeStringh2()
+		{
+			var y = screen.width / 40;
+			var str = "text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: "
+			if(y > 50){y = 50;}
+			str = str + y;
+			str = str + "px;";
+			return str;
+		}
+		
+		function one_alignmentButton()
+		{
+			var y = screen.width / 20;
+			var str = "border-radius: 25px; position: relative; left: "
+			//if(y > 50){y = 50;}
+			str = str + y;
+			str = str + "px;";
+			return str;
+		}
+		
+		
+		function one_realign()
+		{
+			document.getElementById("slide1").style = one_alignmentString();
+			document.getElementById("s1h1").style = one_sizeStringh1();
+			document.getElementById("s1h2").style = one_sizeStringh2();
+			document.getElementById("s1b").style = one_alignmentButton();
+			console.log("one");
+		}
+		
+		one_realign();
+		window.onresize = one_realign;
+		
+	  </script>
+	  
+    </div>
+
+	
+    <div class="item" style="background: black;">
+      <img style="opacity: 0.25;" class="img-responsive" src="Issue2ThumbCropWide.png" alt="Issue Two">
+	  
+      <div id="slide2" style = "" class="carousel-caption justify-content-center">
+	  
+        <p id="s2h1" style="text-align: left;">When the Yelp Reviews are Less than Accurate</p>
+        <p id="s2h2" style="text-align: left;">Our second issue: A jab at our use-it and lose-it society</p>
+		<h1 style="text-align: left;"> </h1>
+	  
+		<button id="s2b" type="button" class="btn btn-primary-outline btn-lg" style="border-radius: 25px; position: relative; left: 78px;">Read More</button>
+	  </div>
+	  
+	  <script> 
+	
+		function two_alignmentString()
+		{
+			var y = screen.width / 30;
+			var str = "left: 10%; transform: translateY(-"
+			if(y > 35){y = 35;}
+			str = str + y;
+			str = str + "%);";
+			return str;
+		}
+		
+		function two_sizeStringh1()
+		{
+			var y = screen.width / 20;
+			var str = "text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: "
+			if(y > 95){y = 95;}
+			str = str + y;
+			str = str + "px;";
+			return str;
+		}
+		
+		
+		function two_sizeStringh2()
+		{
+			var y = screen.width / 40;
+			var str = "text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: "
+			if(y > 50){y = 50;}
+			str = str + y;
+			str = str + "px;";
+			return str;
+		}
+		
+		function two_alignmentButton()
+		{
+			var y = screen.width / 20;
+			var str = "border-radius: 25px; position: relative; left: "
+			//if(y > 50){y = 50;}
+			str = str + y;
+			str = str + "px;";
+			return str;
+		}
+		
+		
+		function two_realign()
+		{
+			document.getElementById("slide2").style = two_alignmentString();
+			document.getElementById("s2h1").style = two_sizeStringh1();
+			document.getElementById("s2h2").style = two_sizeStringh2();
+			document.getElementById("s2b").style = two_alignmentButton();
+			console.log("two");
+		}
+		
+		two_realign();
+		
+		function master_realign()
+		{
+			zero_realign();
+			one_realign();
+			two_realign();
+		}
+		window.onresize = master_realign;
+		
+	  </script>
+    </div>
+	
+
+    <div class="item" style="background: black;">
+      <img style="opacity: 0.25;" class="img-responsive" src="JonWide.jpg" alt="Jon">
+      <div style = "left: 10%; transform: translateY(-60%);" class="carousel-caption ">
+	  
+        <h1 style="text-align: left;">Student Diaries: Jon</h1>
+        <h3 style="text-align: left;">A weekly online publication of student voices and achievements</h3>
+		<h1 style="text-align: left;"> </h1>
+	  
+		<button type="button" class="btn btn-primary-outline btn-lg" style="border-radius: 25px; position: relative; left: 78px;">Read More</button>
+	  </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------>
+
+
+<section id="staticsplash">
+
+<img  style="padding-top: 50px;" class="img-responsive" src="emerge.png" alt="Emerge Splash Logo">
+
+</section>
+
+<section style="background-color: blue; padding-bottom: 55px; background: url('./sectionbg.jpg');
+    
+	
+	height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+">
+
+<div class="container">
+<p style="text-align: left; padding-top: 55px; font-family: 'Encode Sans Expanded', sans-serif; font-size: 50px; text-align: center; color: white;">
+	"Taking a scientific approach to journalism, and a journalistic approach to science"
+</p>
+
+
+<p style="text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: 20px; text-align: center; color: white;">
+We believe that communicating the concepts of science requires empathy; in order to address a lack of understanding, one needs to be familiar with the relative biases. 
+EMERGE envisions a world where scientists and nonscientists understand each other. 
+Science is not purely technical; it is also inherently creative. We want to remind people that technical work should encourage creativity. 
+EMERGE envisions a world where the STEM fields foster this supportive environment and are accessible to all people.
+
+</p>
+</div>
+
+</section>
+
+<!------------------------------------------------------------------------------------------------------------------------------>
+
+<section style="min-height: 35px; max-height: 50px; background-color:#262626; color: #00abbf;">
+    
+	<div style="text-align: center; padding-bottom: 10px; padding-top: 15px; background-color:#262626">
+    <p style="font-size: 20px;">contact us at ubemerge@gmail.com</p>
+    </div>
+	<div style="text-align: center; padding-bottom: 10px; padding-top: 0px; background-color:#262626">
+	
+	<i class="fab fa-facebook-square" style="font-size: 35px; padding-right: 15px;"></i>
+	<i class="fab fa-instagram" style="font-size: 35px; padding-right: 15px;"></i>
+	<i class="fab fa-snapchat-square" style="font-size: 35px;"></i>
+	
+	</div>
+
+</section>
+
+
+</body>
+</html>
