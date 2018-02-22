@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="cssthree.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+  <a href="#" class="navbar-left"><img class="img-responsive"style="max-width:175px; max-height: 150px; margin-top: 2px; padding-top: 0px; padding-bottom: 0px;" src="EmergeLogoTransparentNav.png"></a>
+
+	
+	<ul class="nav navbar-nav navbar-right">
+<!--      <li style="margin-top: 3px;"><a href="#" style="text-align:center;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		  <li style="margin-top: 3px;"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+-->
+    </ul>
+	
+  </div>
+</nav>
+
+<section id="head" style="background-color: #4f4f4f; height: 100%; opacity: 1;">
+
+<div class="container" style="text-align: center; padding-top: 55px; background-color: #4f4f4f">
+
+<p style="font-family: 'Encode Sans Expanded', sans-serif; font-size: 60px; text-align: center; color: white;">Jon Bessette</p>
+<p style="font-family: 'Encode Sans Expanded', sans-serif; font-size: 30px; text-align: center; color: white;">Biomedical Engineering/Pre-med, Class of 2020</p>
+
+<img src="jon.jpg" alt="Smiley face" height="55%" width="55%" style="padding-top: 45px;">
+
+</div>
+
+</section>
+
+<script>
+$(document).ready(function(){
+	$(window).scroll(function(){
+    $("#head").css("opacity", 1 - $(window).scrollTop() / 1000);
+    });
+});
+</script>
+
+<section>
+
+<div class="container" style="text-align: left; padding-top: 45px; padding-bottom: 35px; background-color: white;">
+
+<p style="text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: 50px;">Jon</p>
+<p style="text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: 25px; color: #6d6d6d">"Fortune Favors the Bold."</p>
+
+<p style="text-align: left; font-family: 'Encode Sans Expanded', sans-serif; font-size: 17px; color: #5b5b5b; padding-top: 45px;">"I’m from the relatively small town of Johnson City, a seemingly infinitesimal part of the more widely known Binghamton area. This summer, I worked voluntarily in an Organic Chemistry lab at Binghamton University. On days away from the lab, I volunteered at Binghamton General Hospital, worked at Cinnabon/Carvel, and explored the Catskill and Adirondack mountains. Needless to say, this led to quite a hectic summer but still more manageable than my schedule during the school year. Thankfully, with a flexible schedule at Cinnabon and in Dr.Callahan’s lab, I managed to have a truly memorable experience.
+
+<br><br>
+
+I first met Dr. Callahan when he gave a guest lecture in my biology class, after which I had approached him to ask about his work. One thing led to another and thanks to a vacancy and an interview I soon gained access to his lab. Under Dr. Callahan and his team, I have gained a thoroughly enlightening experience in a lab setting. I had no prior lab experience, and going into this vague area was quite the leap. In the beginning, I struggled to retain the copious inundation of information that was placed on myself; however, I now recognize and understand what we are researching. 
+
+<br><br>
+
+The Callahan lab is studying the Human Sonic Hedgehog protein (SHH for short). The protein is found in nearly all animals and we are attempting to better understand the structure of the protein, particularly its substrate binding site. Manipulation of this protein could explain diseases such as hormonal cancers (prostate and breast), as well as be used in development of anti-cancer drugs and antibiotics. My job involved shadowing, protein separation, sequence analysis to study the protein and the similarities in mutations. 
+
+<br><br>
+
+It has undoubtedly been an amazing experience, and has sparked further interest in biochemistry. I hope to continue similar forms of research in Buffalo. I highly recommend going out into something you have never done, regardless of your age, whether it be research, a club, or a sport. Fortune favors the bold."</p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="carousel" style="padding-top: 75px; padding-bottom: 50px;">    				
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+				  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+				    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  
+				  <p style="text-align: center; font-family: 'Encode Sans Expanded', sans-serif; font-size: 35px; padding-bottom: 20px;">More Pages from the Student Diaries</p>
+				  
+				  <div class="carousel-inner">
+				    <div class="active item">
+                        <div class="profile-circle" style="background-image: url('StudentDiariesPics/cody.jpg');"></div>
+				    	<blockquote style="padding-top: 25px;">
+				    		<p style="text-align: center; font-family: 'Encode Sans Expanded', sans-serif; font-size: 27.5px;">Cody Elkhechen, Biomedical Sciences/Pre-Medicine</p>
+							<p style="text-align: center; font-family: 'Encode Sans Expanded', sans-serif; font-size: 20px;">Class of 2017</p>
+				    	</blockquote>	
+				    </div>
+				    <div class="item">
+                        <div class="profile-circle" style="background-image: url('StudentDiariesPics/krishna.jpg');"></div>
+				    	<blockquote style="padding-top: 25px;">
+				    		<p style="text-align: center; font-family: 'Encode Sans Expanded', sans-serif; font-size: 27.5px;">Krishna Chatpar, Computer Science</p>
+							<p style="text-align: center; font-family: 'Encode Sans Expanded', sans-serif; font-size: 20px;">Class of 2017</p>
+				    	</blockquote>
+				    </div>
+				    <div class="item">
+                        <div class="profile-circle" style="background-image: url('StudentDiariesPics/emily.jpg');"></div>
+				    	<blockquote style="padding-top: 25px;">
+				    		<p style="text-align: center; font-family: 'Encode Sans Expanded', sans-serif; font-size: 27.5px;">Emily Koehler, Biomedical Engineering</p>
+							<p style="text-align: center; font-family: 'Encode Sans Expanded', sans-serif; font-size: 20px;">Class of 2017</p>
+				    	</blockquote>
+				    </div>
+				  </div>
+				  
+				  <a class="left carousel-control" href="#fade-quote-carousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" style="color:#00abbf;"></span>
+						<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#fade-quote-carousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" style="color: #00abbf;"></span>
+						<span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>							
+		</div>
+	</div>
+</section>
+
+
+
+
+<section style="min-height: 35px; max-height: 50px; background-color:#262626; color: #00abbf;">
+    
+	<div style="text-align: center; padding-bottom: 10px; padding-top: 15px; background-color:#262626">
+    <p style="font-size: 20px;">contact us at ubemerge@gmail.com</p>
+    </div>
+	<div style="text-align: center; padding-bottom: 10px; padding-top: 0px; background-color:#262626">
+	
+	<i class="fab fa-facebook-square" style="font-size: 35px; padding-right: 15px;"></i>
+	<i class="fab fa-instagram" style="font-size: 35px; padding-right: 15px;"></i>
+	<i class="fab fa-snapchat-square" style="font-size: 35px;"></i>
+	
+	</div>
+
+</section>
+
+</body>
+</html>
