@@ -33,6 +33,10 @@ body {
 	opacity: 1;
 }
 
+a {
+	color: #00abbf;
+}
+
 /*This section adds padding at the top so that the navbar does not overlay on the carousel*/
 @media (max-width: 500px) {
   body {
